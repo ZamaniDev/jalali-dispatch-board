@@ -21,7 +21,7 @@ A custom Budibase plugin providing a monthly dispatch calendar with full Jalali 
 ### Setup
 ```bash
 # Clone repository
-git clone https://github.com/YOUR_USERNAME/jalali-dispatch-board.git
+git clone https://github.com/zamaniDev/jalali-dispatch-board.git
 cd jalali-dispatch-board
 
 # Install dependencies

@@ -345,3 +345,16 @@ const REAL_TECHNICIANS = [
 **Last Updated:** December 23, 2025
 **Version:** 0.1.0-alpha
 **Status:** Active Development
+## IMPORTANT: Svelte Version
+
+**This plugin uses Svelte 4**, not Svelte 5, because Budibase doesn't support Svelte 5 yet.
+
+### Syntax Guidelines:
+- Use `export let prop` for props (NOT `$props()`)
+- Use `$: reactive = value` for derived values (NOT `$derived()`)
+- Use `$: { ... }` for effects (NOT `$effect()`)
+- Use `writable()` stores (NOT `$state()`)
+
+### When Budibase Supports Svelte 5:
+We can upgrade by changing package.json dependencies and converting syntax.
+

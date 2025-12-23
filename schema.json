@@ -1,0 +1,19 @@
+{
+  "type": "component",
+  "metadata": {
+    "svelteMajor": 5
+  },
+  "schema": {
+    "name": "jalali-dispatch-board",
+    "friendlyName": "jalali-dispatch-board",
+    "description": "Jalali Calendar for Dispatching technicians",
+    "icon": "Text",
+    "settings": [
+      {
+        "type": "text",
+        "key": "text",
+        "label": "Text"
+      }
+    ]
+  }
+}

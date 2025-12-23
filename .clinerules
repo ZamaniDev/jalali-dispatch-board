@@ -1,0 +1,25 @@
+# Claude Code Rules for Jalali Dispatch Board
+
+## Always Read First
+- claude.md - Complete project documentation
+- schema.json - Plugin configuration
+- src/lib/jalali.js - Jalali date utilities
+
+## Code Style
+- Use Svelte 5 syntax
+- Prefer functional components
+- Extract complex logic to lib/
+- Add JSDoc comments for functions
+- Use meaningful variable names
+
+## Testing
+- Test Jalali date conversions carefully
+- Verify drag & drop on each change
+- Check responsive behavior
+- Test with real data IDs (see claude.md)
+
+## Never
+- Don't use Gregorian-only date logic
+- Don't block user actions (only warn)
+- Don't ignore accessibility
+- Don't hardcode company/tech names

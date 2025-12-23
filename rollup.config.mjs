@@ -92,11 +92,6 @@ export default {
     clean(),
     svelte({
       emitCss: true,
-      compilerOptions: {
-        compatibility: {
-          componentApi: 4,
-        },
-      },
       onwarn: (warning, handler) => {
         // Ignore some warnings
         if (!ignoredWarnings.includes(warning.code)) {

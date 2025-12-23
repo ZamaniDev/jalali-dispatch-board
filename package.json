@@ -5,7 +5,7 @@
   "license": "MIT",
   "svelte": "index.js",
   "module": "dist/plugin.min.js",
-  "schema.metadata.svelteMajor": 5,
+  "schema.metadata.svelteMajor": 4,
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -cw"
@@ -15,7 +15,7 @@
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
     "moment-jalaali": "^0.10.4",
-    "svelte": "^5.0.0",
+    "svelte": "^4.0.0",
     "svelte-dnd-action": "^0.9.68"
   },
   "devDependencies": {
@@ -36,6 +36,6 @@
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "svelte": "^5.0.0"
+    "svelte": "^4.0.0"
   }
 }

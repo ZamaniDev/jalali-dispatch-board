@@ -1,19 +1,64 @@
 {
   "type": "component",
   "metadata": {
-    "svelteMajor": 5
+    "svelteMajor": 4
   },
   "schema": {
-    "name": "jalali-dispatch-board",
-    "friendlyName": "jalali-dispatch-board",
-    "description": "Jalali Calendar for Dispatching technicians",
-    "icon": "Text",
+    "name": "Jalali Dispatch Board",
+    "description": "Monthly dispatch calendar with Jalali support",
+    "icon": "Calendar",
     "settings": [
-      {
-        "type": "text",
-        "key": "text",
-        "label": "Text"
-      }
-    ]
+    {
+      "type": "dataSource",
+      "label": "Schedules Data",
+      "key": "schedulesDataSource",
+      "required": true
+    },
+    {
+      "type": "dataSource",
+      "label": "Technicians Data",
+      "key": "techniciansDataSource",
+      "required": true
+    },
+    {
+      "type": "dataSource",
+      "label": "Companies Data",
+      "key": "companiesDataSource",
+      "required": true
+    },
+    {
+      "type": "number",
+      "label": "Default Hours Per Day",
+      "key": "defaultHours",
+      "defaultValue": 8
+    },
+    {
+      "type": "boolean",
+      "label": "Show Warnings",
+      "key": "showWarnings",
+      "defaultValue": true
+    },
+    {
+      "type": "boolean",
+      "label": "Allow Overlaps",
+      "key": "allowOverlaps",
+      "defaultValue": false
+    },
+    {
+      "type": "event",
+      "label": "On Schedule Create",
+      "key": "onScheduleCreate"
+    },
+    {
+      "type": "event",
+      "label": "On Schedule Update",
+      "key": "onScheduleUpdate"
+    },
+    {
+      "type": "event",
+      "label": "On Schedule Delete",
+      "key": "onScheduleDelete"
+    }
+  ]
   }
 }
